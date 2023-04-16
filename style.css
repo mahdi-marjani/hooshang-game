@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #cd4655, #4c4cf3);
+  color: white;
+  overflow: auto;
+}
+div.container-form {
+  background-color: #252732;
+  width: 90%;
+  height: 99%;
+  min-height: 350px;
+  max-width: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+div.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 30%;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0%;
+}
+span.jadi {
+  color: #ffc201;
+}
+span.puzzle > svg {
+  color: #ffc201;
+  display: flex;
+  width: 40px;
+}
+div.result {
+  border: 1px solid #5a5bc7;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.result > h2 {
+  margin: 0;
+  margin-top: 10px;
+  align-self: center;
+}
+div.result > p {
+  margin: 0;
+  margin-right: 10px;
+}
+div.table {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  flex-grow: 1;
+}
+div.thead > div.row {
+  background-color: #141536;
+  color: #7373ff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+div.tbody {
+  height: 100%;
+  overflow-y: auto;
+}
+div.tbody > div.row {
+  background-color: #272839;
+  border-bottom: 1px solid #0e1023;
+}
+div.row {
+  display: flex;
+  height: 30px;
+}
+div.th {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.td {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+label {
+  font-weight: 600;
+  color: #7f808a;
+  width: 100%;
+}
+input[type="text"] {
+  height: 30px;
+  width: 40%;
+  background-color: #30323c;
+  border: 2px solid #5a5bc7;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+}
+input[value="Ok"] {
+  height: 35px;
+  width: 5%;
+  flex-grow: 1;
+  background-color: #4b4bf3;
+  border: none;
+  border-radius: 100px;
+  margin-left: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+label#err {
+  color: red;
+}
+input.defult:focus {
+  outline: outset 2px #46b5f9;
+}
+input.err:focus {
+  outline: outset 2px red;
+}
+input[type="button"]:focus {
+  outline: none;
+}
+div.start-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.start-menu > p {
+  font-size: large;
+}
+input[value="start"],
+input[value="start again"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 100%;
+  border: none;
+  background-color: #cd4655;
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
