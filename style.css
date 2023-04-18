@@ -73,8 +73,12 @@ div.result {
 }
 div.result > h2 {
   margin: 0;
+  width: 90%;
   margin-top: 10px;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.result > p {
   margin: 0;
