@@ -75,6 +75,7 @@ div.result > h2 {
   margin: 0;
   width: 90%;
   margin-top: 10px;
+  text-align: center;
   align-self: center;
   display: flex;
   justify-content: center;
