@@ -27,14 +27,14 @@ function ok() {
       result.style.color = "#D4FF00";
       inputs.style.display = "none";
       again.style.display = "flex";
-      count = 0;
+      let count_change_color = 0;
       setInterval(function () {
-        if (count % 2 == 0) {
+        if (count_change_color % 2 == 0) {
           body.className = "win";
-          count++;
+          count_change_color++;
         } else {
           body.className = "defult";
-          count = 0;
+          count_change_color = 0;
         }
       }, 300);
     }
