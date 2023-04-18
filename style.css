@@ -9,9 +9,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #cd4655, #4c4cf3);
   color: white;
   overflow: auto;
+}
+body.defult {
+  background-image: linear-gradient(to right, #cd4655, #4c4cf3);
+}
+body.win {
+  background-image: linear-gradient(to left, #cd4655, #4c4cf3);
 }
 div.container-form {
   background-color: #252732;

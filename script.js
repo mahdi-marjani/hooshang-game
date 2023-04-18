@@ -15,6 +15,7 @@ function ok() {
     let result = document.getElementById("result");
     let inputs = document.getElementById("inputs");
     let again = document.getElementById("again");
+    let body = document.getElementById("body");
 
     count++;
     if (javab.value == "b") {
@@ -22,10 +23,20 @@ function ok() {
     } else if (javab.value == "k") {
       max = random_num - 1;
     } else if (javab.value == "d") {
-      result.innerHTML = "جواد اسکریپت برنده شد ...";
+      result.innerHTML = "جواد اسکریپت برنده شد با " + count + " حدس";
       result.style.color = "#D4FF00";
       inputs.style.display = "none";
       again.style.display = "flex";
+      count = 0;
+      setInterval(function () {
+        if (count % 2 == 0) {
+          body.className = "win";
+          count++;
+        } else {
+          body.className = "defult";
+          count = 0;
+        }
+      }, 300);
     }
 
     row.classList.add("row");
